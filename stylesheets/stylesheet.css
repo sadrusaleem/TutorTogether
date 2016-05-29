@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+  .popup{
+    .padding-top: 10;
+  }
+
 body {
   padding: 0;
   margin: 0;
@@ -17,10 +21,11 @@ a {
 
 .btn {
   display: inline-block;
+  font-weight: bold;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  background-color: rgba(255, 255, 255, .9);
+  border-color: rgba(255, 255, 255, 1);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -34,6 +39,10 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+  .content-header-mine {
+    font-weight: bold;
+  }
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
@@ -41,39 +50,44 @@ a {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } }
+    font-size: 5rem; } }
 
 @media screen and (max-width: 42em) {
   .btn {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    font-size: 0.9rem; }
+    font-size: 5rem; }
     .btn + .btn {
       margin-top: 1rem;
       margin-left: 0; } }
 
-.page-header {
+.page-header-mine {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: url(background.jpg); }
+  background-image: url(background.jpg);
+  background-size: cover; }
 
 @media screen and (min-width: 64em) {
-  .page-header {
+  .page-header-mine {
     padding: 5rem 6rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
+  .page-header-mine {
     padding: 3rem 4rem; } }
 
 @media screen and (max-width: 42em) {
-  .page-header {
+  .page-header-mine {
     padding: 2rem 1rem; } }
 
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0.1rem;}
+
+.header-text-mine {
+    color: white; 
+}
 
 @media screen and (min-width: 64em) {
   .project-name {
@@ -89,8 +103,7 @@ a {
 
 .project-tagline {
   margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7; }
+  font-weight: bold; }
 
 @media screen and (min-width: 64em) {
   .project-tagline {
@@ -104,25 +117,25 @@ a {
   .project-tagline {
     font-size: 1rem; } }
 
-.main-content :first-child {
+.main-content-mine :first-child {
   margin-top: 0; }
-.main-content img {
+.main-content-mine img {
   max-width: 100%; }
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+.main-content-mine h1, .main-content-mine h2, .main-content-mine h3, .main-content-mine h4, .main-content-mine h5, .main-content-mine h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
   color: #159957; }
-.main-content p {
+.main-content-mine p {
   margin-bottom: 1em; }
-.main-content code {
+.main-content-mine code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
   color: #383e41;
   background-color: #f3f6fa;
   border-radius: 0.3rem; }
-.main-content pre {
+.main-content-mine pre {
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -132,7 +145,7 @@ a {
   background-color: #f3f6fa;
   border: solid 1px #dce6f0;
   border-radius: 0.3rem; }
-  .main-content pre > code {
+  .main-content-mine pre > code {
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
@@ -141,18 +154,18 @@ a {
     white-space: pre;
     background: transparent;
     border: 0; }
-.main-content .highlight {
+.main-content-mine .highlight {
   margin-bottom: 1rem; }
-  .main-content .highlight pre {
+  .main-content-mine .highlight pre {
     margin-bottom: 0;
     word-break: normal; }
-.main-content .highlight pre, .main-content pre {
+.main-content-mine .highlight pre, .main-content-mine pre {
   padding: 0.8rem;
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.45;
   border-radius: 0.3rem; }
-.main-content pre code, .main-content pre tt {
+.main-content-mine pre code, .main-content-mine pre tt {
   display: inline;
   max-width: initial;
   padding: 0;
@@ -162,41 +175,41 @@ a {
   word-wrap: normal;
   background-color: transparent;
   border: 0; }
-  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
+  .main-content-mine pre code:before, .main-content-mine pre code:after, .main-content-mine pre tt:before, .main-content-mine pre tt:after {
     content: normal; }
-.main-content ul, .main-content ol {
+.main-content-mine ul, .main-content-mine ol {
   margin-top: 0; }
-.main-content blockquote {
+.main-content-mine blockquote {
   padding: 0 1rem;
   margin-left: 0;
   color: #819198;
   border-left: 0.3rem solid #dce6f0; }
-  .main-content blockquote > :first-child {
+  .main-content-mine blockquote > :first-child {
     margin-top: 0; }
-  .main-content blockquote > :last-child {
+  .main-content-mine blockquote > :last-child {
     margin-bottom: 0; }
-.main-content table {
+.main-content-mine table {
   display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all; }
-  .main-content table th {
+  .main-content-mine table th {
     font-weight: bold; }
-  .main-content table th, .main-content table td {
+  .main-content-mine table th, .main-content-mine table td {
     padding: 0.5rem 1rem;
     border: 1px solid #e9ebec; }
-.main-content dl {
+.main-content-mine dl {
   padding: 0; }
-  .main-content dl dt {
+  .main-content-mine dl dt {
     padding: 0;
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold; }
-  .main-content dl dd {
+  .main-content-mine dl dd {
     padding: 0;
     margin-bottom: 1rem; }
-.main-content hr {
+.main-content-mine hr {
   height: 2px;
   padding: 0;
   margin: 1rem 0;
@@ -204,19 +217,19 @@ a {
   border: 0; }
 
 @media screen and (min-width: 64em) {
-  .main-content {
+  .main-content-mine {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .main-content {
+  .main-content-mine {
     padding: 2rem 4rem;
     font-size: 1.1rem; } }
 
 @media screen and (max-width: 42em) {
-  .main-content {
+  .main-content-mine {
     padding: 2rem 1rem;
     font-size: 1rem; } }
 
@@ -243,3 +256,161 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #109177;
+}
